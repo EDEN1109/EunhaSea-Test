@@ -12,6 +12,8 @@
 }
 
 #unity-canvas {
+    height: 100vh;
+    width: calc(100vh/ 20 * 9); 
     background: #231F20;
     margin: auto;
 }
