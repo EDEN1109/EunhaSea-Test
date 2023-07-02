@@ -137,19 +137,7 @@
             // unityShowBanner('WebGL builds are not supported on mobile devices.');
         } else {
             // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-            console.log("PC");
-            console.log(window.innerHeight);
-
-            canvas.height = window.innerHeight;
-            canvas.width = canvas.height / 20 * 9;
-
-            console.log(canvas.height);
-            console.log(canvas.width);
-
-            window.addEventListener('resize', () => {
-                canvas.height = window.innerHeight;
-                canvas.width = canvas.height / 20 * 9;
-            })
+          
         }
 
         loadingBar.style.display = "block";
