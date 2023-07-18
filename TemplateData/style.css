@@ -13,7 +13,7 @@
 
 #unity-canvas {
     height: 100vh;
-    width: calc(100vh/ 20 * 9); 
+    width: calc(100vh/ 20 * 9);
     background: #231F20;
     margin: auto;
 }
@@ -34,7 +34,6 @@
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 html {
     -ms-touch-action: none;
-    height: 150vh;
 }
 
 body, canvas, div {
@@ -61,7 +60,7 @@ body {
     top: 0px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150vh;
     padding: 0;
     border: 0;
     margin: 0px;
@@ -72,7 +71,6 @@ body {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 }
 
 
