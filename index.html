@@ -113,7 +113,8 @@
         // the canvas DOM size and WebGL render target sizes yourself.
         // config.matchWebGLToCanvasSize = false;
 
-        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        const MOBILE_MAX_TOUCHPOINTS = 5;
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || navigator.maxTouchPoints === MOBILE_MAX_TOUCHPOINTS) {
             // Mobile device style: fill the whole browser client area with the game canvas:
 
             console.log("Mobile");
