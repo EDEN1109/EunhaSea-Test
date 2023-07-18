@@ -137,7 +137,7 @@
             // unityShowBanner('WebGL builds are not supported on mobile devices.');
         } else {
             // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-          
+
         }
 
         loadingBar.style.display = "block";
@@ -158,6 +158,15 @@
             });
         };
         document.body.appendChild(script);
+    </script>
+    <script type="text/javascript" language="javascript">
+        // 모바일 웹 주소창 숨기기
+        window.addEventListener('load', function () {
+            // body의 height를 살짝 늘리는 코드
+            document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+            // scroll를 제어 하는 코드
+            setTimeout(scrollTo, 0, 0, 1);
+        }, false);
     </script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
