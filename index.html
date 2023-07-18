@@ -36,6 +36,7 @@
     <!--fix fireball/issues/3568 -->
     <!--<meta name="browsermode" content="application">-->
     <meta name="x5-page-mode" content="app">
+    <meta name="mobile-web-app-capable" content="yes">
 
     <!--<link rel="apple-touch-icon" href=".png" />-->
     <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
@@ -112,7 +113,6 @@
         // the canvas DOM size and WebGL render target sizes yourself.
         // config.matchWebGLToCanvasSize = false;
 
-        console.log(navigator.userAgent);
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             // Mobile device style: fill the whole browser client area with the game canvas:
 
